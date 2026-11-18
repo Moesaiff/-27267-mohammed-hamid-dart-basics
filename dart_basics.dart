@@ -48,6 +48,7 @@ int momoFee(int amount) {
   if (amount <= 10000) return 100;
   if (amount <= 150000) return 250;
   return 1500;
+  
 }
 
 String maskPhone(String phone) {
@@ -58,9 +59,33 @@ String maskPhone(String phone) {
       masked +
       phone.substring(phone.length - 2);
 }
+String grade(int mark) {
+  // by MSAAH
+  if (mark >= 80) {
+    return 'A';
+  } else if (mark >= 70) {
+    return 'B';
+  } else if (mark >= 50) {
+    return 'C';
+  }
+  return 'F';
+}
+bool isPalindrome(String word) {
+  // by MSAAH
+  int i = 0;
 
+  while (i < word.length ~/ 2) {
+    if (word[i] != word[word.length - 1 - i]) {
+      return false;
+    }
+    i++;
+  }
+
+  return true;
+}
 void main() {
   // by MSAAH
+  print(isPalindrome('mom'));
   print('Reg no: $regNo | D = $d | T = $t');
 
   const String myName = 'Mohammed Saif Aldeen Ahmed Hamid';
