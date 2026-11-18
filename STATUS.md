@@ -1,21 +1,30 @@
 # STATUS
 
 ## Done
-- A1: trace answered in answers.pdf
-- A2: trace answered in answers.pdf
-- B1: trace answered in answers.pdf
-- B2: countVowels written and tested
-- B3: initials written and tested
-- C1-C4: traces answered in answers.pdf
-- C5: drawTriangle written and tested
-- D1: trace answered in answers.pdf
-- D2: momoFee, maskPhone and receipt loop written
-- E: both functions fixed
-- F: formatRwf, isValidPin, sendMoney, buyAirtime, main written
-- G: debugging log written
+- A1–A2: Completed trace answers.
+
+B2: Implemented countVowels().
+
+B3: Implemented initials().
+
+C1–C4: Completed control-flow trace answers.
+
+C5: Implemented and tested drawTriangle().
+
+D1: Completed function trace answers.
+
+D2: Implemented MoMo receipt printer functions.
+
+E: Corrected grade() and isPalindrome().
+
+F: Completed and tested the MoMo USSD simulator.
+
+README.md: Reviewed.
+
+GitHub: Code synchronized with the remote repository.
 
 ## In progress
 - Final read-through of answers.pdf
 
 ## Stuck on
-- Nothing right now
+- Part G: Identified two genuine errors during the assignment, but could not identify a third error despite reviewing my code and previous work.
