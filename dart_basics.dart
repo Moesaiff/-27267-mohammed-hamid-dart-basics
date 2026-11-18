@@ -16,18 +16,6 @@ int countVowels(String text) {
   return count;
 }
 
-// FIRST DRAFT of countVowels (kept for the debugging log, Part G).
-// It forgot toLowerCase(), so capital vowels were not counted:
-//
-// int countVowels(String text) {
-//   int count = 0;
-//   for (int i = 0; i < text.length; i++) {
-//     if ('aeiou'.contains(text[i])) {
-//       count++;
-//     }
-//   }
-//   return count;
-// }
 
 String initials(String fullName) {
   // by MSAAH

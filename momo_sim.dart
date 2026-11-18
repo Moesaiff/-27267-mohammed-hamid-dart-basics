@@ -32,23 +32,6 @@ String formatRwf(int amount) {
   return '$sign$result RWF';
 }
 
-// FIRST DRAFT of formatRwf (kept for the debugging log, Part G).
-// It put the '-' sign through the same loop as the digits, so
-// formatRwf(-500) printed '-,500 RWF':
-//
-// String formatRwf(int amount) {
-//   String digits = amount.toString();
-//   String result = '';
-//   int count = 0;
-//   int i = digits.length - 1;
-//   while (i >= 0) {
-//     if (count > 0 && count % 3 == 0) result = ',$result';
-//     result = digits[i] + result;
-//     count++;
-//     i--;
-//   }
-//   return '$result RWF';
-// }
 
 bool isValidPin(String pin) {
   // by MSAAH
