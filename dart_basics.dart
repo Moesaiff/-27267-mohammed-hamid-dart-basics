@@ -7,9 +7,9 @@ final int t = int.parse(regNo.substring(regNo.length - 2));
 int countVowels(String text) {
   // by MSAAH
   int count = 0;
-  String lower = text.toLowerCase();
-  for (int i = 0; i < lower.length; i++) {
-    if ('aeiou'.contains(lower[i])) {
+  
+  for (int i = 0; i < text.length; i++) {
+    if ('aeiou'.contains(text[i])) {
       count++;
     }
   }
@@ -29,17 +29,6 @@ String initials(String fullName) {
   return result;
 }
 
-// FIRST DRAFT of initials (kept for the debugging log, Part G).
-// It crashed on ' ana uwase ' because split(' ') makes empty strings,
-// and ''[0] is a RangeError:
-//
-// String initials(String fullName) {
-//   String result = '';
-//   for (String part in fullName.split(' ')) {
-//     result += '${part[0].toUpperCase()}.';
-//   }
-//   return result;
-// }
 
 void drawTriangle(int height) {
   // by MSAAH
