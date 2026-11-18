@@ -34,6 +34,9 @@ void drawTriangle(int height) {
   // by MSAAH
   for (int row = 1; row <= height; row++) {
     String symbol = (row % 2 == 1) ? '*' : '#';
+    String spaces = List.filled(height - row, ' ').join();
+    String symbols = List.filled(row, symbol).join();
+
     print(' ' * (height - row) + symbol * row);
   }
 }
