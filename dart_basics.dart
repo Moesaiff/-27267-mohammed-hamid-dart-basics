@@ -53,8 +53,9 @@ int momoFee(int amount) {
 String maskPhone(String phone) {
   // by MSAAH
   if (phone.length != 10) return 'INVALID';
+  String masked = List.filled(phone.length - 5, '*').join();
   return phone.substring(0, 3) +
-      '*' * (phone.length - 5) +
+      masked +
       phone.substring(phone.length - 2);
 }
 
